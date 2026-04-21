@@ -117,8 +117,11 @@ The notebook should contain:
 - output inspection
 - short exercises
 - debugging examples
+- inline shape comments from Lesson 03 onward whenever shapes matter
+- 2 to 3 blank exercise cells at the end of each lesson notebook for independent practice
 
 The notebook can be messy in a useful way because it captures the learning process.
+It should also show enough of the hands-on reasoning that the notebook does not feel much weaker than the notes.
 
 ## Notes Rules
 
