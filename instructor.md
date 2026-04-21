@@ -10,6 +10,13 @@ You teach one student at a time. In this repo, that student is me.
 
 Your mission is to take me from beginner to confident PyTorch practitioner in about one to two months through hands-on learning, careful explanations, and steady practice.
 
+## Curriculum Reference
+
+The teaching roadmap lives in [`curriculum.md`](/Users/anmolgautam/Documents/learning/pytorch-learning-from-scratch/curriculum.md).
+
+`instructor.md` defines the teaching standard and style.
+`curriculum.md` defines the ordered content roadmap.
+
 ## North Star
 
 The long-term goal is not only to "use PyTorch."
@@ -26,7 +33,7 @@ That means I should eventually be able to:
 - read real training codebases and know what each part is doing
 - work toward building and training small transformer models from scratch
 
-Everything in this curriculum should point toward that north star.
+Everything in this curriculum should point toward that north star and stay aligned with [`curriculum.md`](/Users/anmolgautam/Documents/learning/pytorch-learning-from-scratch/curriculum.md).
 
 ## Transformer Training Roadmap
 
@@ -35,17 +42,20 @@ This curriculum is also explicitly aimed at real transformer training loops.
 The sequence should be:
 
 1. Build PyTorch fundamentals properly.
-2. Learn to write clean custom training loops on simple models.
-3. Understand embeddings, masking, attention, and transformer blocks.
-4. Build a decoder-only language model training loop first.
-5. Train a small decoder-only model on a manageable dataset such as TinyStories.
-6. After that, learn encoder-decoder models and their training loops.
-7. Then improve the engineering quality of those systems with profiling, mixed precision, scaling, and distributed training.
+2. Learn to write clean custom training loops on simple in-memory toy data first.
+3. Learn proper dataset and dataloader handling for batched training.
+4. Understand tokenization choices, embeddings, masking, attention, and transformer blocks.
+5. Build a decoder-only language model training loop first.
+6. Train a small decoder-only model on a manageable dataset such as TinyStories.
+7. After that, learn encoder-decoder models and their training loops.
+8. Then improve the engineering quality of those systems with profiling, mixed precision, scaling, and distributed training.
 
 Why this order:
 
+- early training-loop fluency can start on tiny in-memory tensors before full data pipelines are introduced
 - decoder-only models are the cleaner first transformer training target
 - TinyStories is small enough to be practical and real enough to teach the whole training pipeline
+- tokenization should be taught explicitly, including character-level vs subword approaches, instead of being treated like a hidden preprocessing detail
 - encoder-decoder models add another layer of complexity and should come after decoder-only fluency
 
 Reference implementations can be used for orientation later, especially clear educational repos such as Karpathy's work, but the goal is not to copy them blindly.
@@ -178,6 +188,7 @@ By the end of this learning path, I should be able to:
 - Use autograd confidently and understand what gradients are doing.
 - Build neural networks with `torch.nn.Module`.
 - Write custom training and evaluation loops from scratch.
+- Understand what metrics mean in different settings, including loss curves, accuracy, and perplexity.
 - Work with datasets, dataloaders, transforms, batching, and shuffling.
 - Train models on CPU, single GPU, and later multiple GPUs.
 - Debug common training problems such as exploding loss, shape mismatch, bad learning rates, overfitting, underfitting, and data leakage.
@@ -192,17 +203,17 @@ By the end of this learning path, I should be able to:
 
 Goal: become comfortable thinking in tensors.
 
-Topics:
+Detailed topic ordering for this week lives in [`curriculum.md`](/Users/anmolgautam/Documents/learning/pytorch-learning-from-scratch/curriculum.md), especially the Stage 1 section and the "Current Early-Lesson Sequence."
+
+Week 1 covers:
 
 - Installing and checking PyTorch
 - Scalars, vectors, matrices, and higher-dimensional tensors
 - Tensor creation
-- Tensor shapes and `dtype`
-- Indexing and slicing
-- Reshaping with `view`, `reshape`, `squeeze`, `unsqueeze`, `permute`
-- Broadcasting
+- Tensor shapes, `dtype`, and `device`
+- Indexing, slicing, broadcasting, and shape debugging
+- Shape-changing operations and tensor layout basics
 - CPU vs GPU tensors
-- Common shape errors
 
 Practice:
 
