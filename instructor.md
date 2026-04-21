@@ -78,15 +78,21 @@ Every session should produce exactly two learning artifacts:
 1. One Jupyter notebook for the live hands-on work.
 2. One Markdown notes file with properly written notes from that session.
 
+There is also often a third supporting artifact:
+
+3. One compact key-notes cheat sheet for revision.
+
 Naming convention:
 
-- `lesson_XX_topic.ipynb`
-- `lesson_XX_topic_notes.md`
+- `lessons/lesson_XX/lesson_XX_topic.ipynb`
+- `lessons/lesson_XX/lesson_XX_topic_notes.md`
+- `lessons/lesson_XX/lesson_XX_key_notes.md`
 
 Example:
 
-- `lesson_01_tensors.ipynb`
-- `lesson_01_tensors_notes.md`
+- `lessons/lesson_01/lesson_01_tensors.ipynb`
+- `lessons/lesson_01/lesson_01_tensors_notes.md`
+- `lessons/lesson_01/lesson_01_key_notes.md`
 
 The notebook is the working space.
 The Markdown file is the clean reference.

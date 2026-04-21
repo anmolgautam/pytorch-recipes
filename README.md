@@ -50,15 +50,15 @@ There is also often a third lightweight artifact:
 
 Naming convention:
 
-- `lesson_XX_topic.ipynb`
-- `lesson_XX_topic_notes.md`
-- `lesson_XX_key_notes.md`
+- `lessons/lesson_XX/lesson_XX_topic.ipynb`
+- `lessons/lesson_XX/lesson_XX_topic_notes.md`
+- `lessons/lesson_XX/lesson_XX_key_notes.md`
 
 Examples:
 
-- `lesson_01_tensors.ipynb`
-- `lesson_01_tensors_notes.md`
-- `lesson_01_key_notes.md`
+- `lessons/lesson_01/lesson_01_tensors.ipynb`
+- `lessons/lesson_01/lesson_01_tensors_notes.md`
+- `lessons/lesson_01/lesson_01_key_notes.md`
 
 ## Learning Method
 
@@ -96,6 +96,7 @@ TinyStories and educational repos such as Karpathy's work may be used later as r
 ## Repo Files
 
 - [`instructor.md`](./instructor.md): the teaching contract, style, and long-term roadmap
+- [`lessons/`](./lessons): one folder per lesson
 - lesson notebooks: the live practice sessions
 - lesson notes: structured explanations, confusions, and clarifications
 - key notes: compact revision sheets
