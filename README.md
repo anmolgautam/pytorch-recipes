@@ -117,5 +117,6 @@ This repo currently contains:
 
 - Lesson 01: tensors
 - Lesson 02: reshape
+- Lesson 03: squeeze and unsqueeze
 
 The next lessons will continue building tensor fluency before moving deeper into autograd and training.
